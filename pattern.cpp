@@ -81,12 +81,44 @@ using namespace std;
         }
         
     }
+    void print3(int n)
+    {
+        
+        // code here
+        for(int i = 1 ;i<=n;i++)
+        {
+            for(int j=1 ; j<=i ; j++)
+            {
+                cout<<j;
+                cout<< " ";
+            }
+            for(int j=2*(n-i) ; j>0 ; j--)
+            {
+                cout<< " ";
+            }
+                for(int j=2*(n-i) ; j>0 ; j--)
+            {
+                cout<< " ";
+            }
+         
+            for(int j=i ; j>0 ; j--)
+            {
+                cout<<j;
+                cout<< " ";
+                
+          
+            }
+            
+            cout<<endl;
+        }
+    }
+    
 //{ Driver Code Starts.
 
 int main() {
      {
         int n=3;
-       print(n);
+       print3(n);
     }
     return 0;
 }
